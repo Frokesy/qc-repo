@@ -1,0 +1,35 @@
+.paginations {
+  padding-top: 30px;
+  display: flex;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    li {
+      font-size: 12px;
+      font-weight: bold;
+      list-style: none;
+      padding: 6px 10px;
+      border: 1px solid #000;
+      margin-right: 5px;
+      cursor: pointer;
+      &:hover {
+        border: none;
+        background-color: #446ce4;
+        border: 1px solid #446ce4;
+        color: #ffff;
+      }
+      &.active {
+        background-color: #446ce4;
+        border: 1px solid #446ce4;
+        color: #fff;
+      }
+      &.disable {
+        background-color: #fff;
+        border: 1px solid #b7b6b6;
+        color: #b7b6b6;
+        display: none;
+      }
+    }
+  }
+}

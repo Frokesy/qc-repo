@@ -1,0 +1,76 @@
+@import '../../resources';
+
+.sidebar {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  background-color: #fff;
+  width: 17%;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 100px;
+  transition: left 1s;
+  box-shadow: 6px 0px 5px -5px rgba(0, 0, 0, 0.301);
+  z-index: 5;
+  @include mobile-1024px {
+    width: 25%;
+    position: absolute;
+    left: -100%;
+    &.active {
+      left: 0;
+    }
+  }
+  @include mobile-800px {
+    width: 30%;
+  }
+  @include mobile-600px {
+    width: 40%;
+  }
+  @include mobile-420px {
+    width: 70%;
+  }
+  .columns {
+    padding: 0 20px;
+    .enroll {
+      position: relative;
+    }
+    .rowd {
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px;
+      cursor: pointer;
+      color: #023047;
+      &:hover {
+        color: #446ce4;
+      }
+      &.active {
+        color: #446ce4;
+      }
+      .icon {
+        display: flex;
+        align-items: flex-end;
+        svg {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-size: 16px;
+        padding: 0 13px;
+      }
+    }
+    .others {
+      padding-left: 15px;
+      display: none;
+      transition: display 1s;
+      &.active {
+        display: block;
+      }
+      .row {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

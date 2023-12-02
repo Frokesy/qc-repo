@@ -1,0 +1,16 @@
+.fader {
+    background-color: #ccc;
+    transition: background-color 1s;
+    opacity: 1;
+  }
+  
+  .fader:hover {
+    background-color: #004369;
+  }
+  
+  .fader:focus,
+  .fader:active {
+    background-color: #ccc;
+    transition: none;
+  }
+      

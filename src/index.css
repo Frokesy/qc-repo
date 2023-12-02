@@ -1,0 +1,119 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box !important;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Montserrat', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* background-color: pink; */
+  box-sizing: border-box !important;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box !important;
+  position: relative;
+}
+
+code {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  /* position: relative;
+  z-index: 1; */
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+
+.app-padding {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+}
+
+.app-padding2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slick-list {
+  /* padding: 0 60% 0 0 !important; */
+}
+
+/* .slick-list .slick-track {
+  padding-left: 12.5%;
+} */
+:root {
+  --base-color: #f9f4ea;
+}
+
+@media (max-width: 600px) {
+  .app-padding {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+input,
+select {
+  outline: none !important;
+  border: none;
+}
+
+.react-responsive-modal-modal {
+  border-radius: 5px !important;
+}
+
+.paymentTotalbtn {
+  width: 100%;
+  height: 48px;
+  margin-top: 50px;
+}
+
+.paymentTotalbtn button {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}

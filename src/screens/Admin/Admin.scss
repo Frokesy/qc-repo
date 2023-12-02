@@ -1,0 +1,57 @@
+@import '../../resources';
+
+.main-dashboard {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  h1,
+  h2,
+  h3,
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: unset;
+  }
+  .main_body {
+    display: flex;
+    min-height: 100vh;
+    .main_container {
+      height: 100vh;
+      min-height: 100vh;
+      overflow-y: auto;
+      width: 83%;
+      background: #f1f5fd;
+      @include mobile-1024px {
+        width: 100%;
+      }
+      .orangeButton {
+        font-size: 14px;
+        border: none;
+        padding: 10px 30px;
+        background: #ff8a00;
+        border: 1px solid #ff8a00;
+        border-radius: 21px;
+        color: #fff;
+        display: flex;
+        p {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+.loaders {
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  background: #edebeb;
+  margin-top: -100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

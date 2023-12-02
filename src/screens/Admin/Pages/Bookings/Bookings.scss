@@ -1,0 +1,732 @@
+@import '../../../../resources';
+.bookings {
+}
+.userPage {
+  display: flex;
+  position: relative;
+  .left {
+    width: 69%;
+    padding: 100px 30px 50px 30px;
+    height: 100vh;
+    overflow-y: auto;
+    @include mobile-800px {
+      width: 100%;
+      padding: 100px 20px 0 20px;
+    }
+    .top {
+      display: flex;
+      justify-content: right;
+      @include mobile-800px {
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        font-size: 14px;
+        border: none;
+        padding: 10px 30px;
+        background: #446ce4;
+        border: 1px solid #446ce4;
+        border-radius: 21px;
+        color: #fff;
+        display: flex;
+        p {
+          padding-right: 5px;
+        }
+      }
+      .burger {
+        display: none;
+        @include mobile-800px {
+          display: block;
+        }
+        svg {
+          font-size: 30px;
+        }
+      }
+    }
+    .back {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 35px;
+      flex-wrap: wrap;
+      .back_left {
+        display: flex;
+        align-items: center;
+        @include mobile-800px {
+          padding-bottom: 20px;
+        }
+        h1 {
+          font-size: 25px;
+          margin-left: 15px;
+        }
+        svg {
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+      .back_right {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .user_details {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      flex-wrap: wrap;
+      border-bottom: 0.5px solid #a2a2a2;
+      padding-bottom: 50px;
+      margin-bottom: 30px;
+
+      .user_right {
+        width: 100%;
+        background-color: #fff;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        @include mobile-600px {
+          width: 100%;
+        }
+        .cardx {
+          width: 30%;
+          margin-bottom: 20px;
+          @include mobile-600px {
+            width: 100%;
+          }
+          p {
+            font-size: 13px;
+            padding-bottom: 7px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          a {
+            text-decoration: none;
+          }
+          button {
+            font-size: 14px;
+            border: none;
+            padding: 10px 30px;
+            background: #446ce4;
+            border: 1px solid #446ce4;
+            border-radius: 21px;
+            color: #fff;
+            display: flex;
+            p {
+              padding-right: 5px;
+            }
+          }
+        }
+        .cardz {
+          margin-bottom: 20px;
+          width: 100%;
+          p {
+            font-size: 13px;
+            padding-bottom: 7px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .information_page {
+      .info {
+        .info_top {
+          display: flex;
+          align-items: center;
+          padding-bottom: 20px;
+          .icon {
+            padding-right: 15px;
+            svg {
+              font-size: 20px;
+            }
+          }
+          h2 {
+            font-size: 20px;
+          }
+          .info-top_wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            .one {
+              display: flex;
+              align-items: center;
+              .icon {
+                padding-right: 15px;
+                svg {
+                  font-size: 20px;
+                }
+              }
+              h2 {
+                font-size: 20px;
+              }
+            }
+            .two {
+              button {
+                font-size: 12px;
+                border: none;
+                padding: 10px 20px;
+                color: #000;
+                border: 1px solid #afafaf;
+                border-radius: 4px;
+                margin-left: 10px;
+                background: #f1f5fd;
+                &.active {
+                  color: #fff;
+                  background: #446ce4;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        .info_wrap {
+          .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .cardx {
+              width: 48%;
+              margin-bottom: 20px;
+              @include mobile-600px {
+                width: 100%;
+              }
+              h6 {
+                color: red;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                padding-bottom: 5px;
+              }
+              select,
+              input {
+                border: 1px solid #b4b4b4;
+                border-radius: 4px;
+                width: 100%;
+                padding: 10px 20px;
+                &::placeholder {
+                }
+              }
+            }
+            .buttons {
+              text-align: right;
+              width: 100%;
+              button,
+              .button {
+                margin-left: 20px;
+                font-size: 14px;
+                border: none;
+                background: none;
+                &.save {
+                  padding: 8px 16px;
+                  background: #446ce4;
+                  border-radius: 21px;
+                  color: #fff;
+                }
+              }
+            }
+            .loaders {
+              text-align: right;
+              height: fit-content;
+              display: flex;
+              justify-content: right;
+              width: 100%;
+              img {
+                width: 70px;
+              }
+            }
+          }
+        }
+        .four_wrap {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .cardx {
+            padding-bottom: 25px;
+            padding-right: 20px;
+            &.fg {
+              width: 32%;
+            }
+            @include mobile-420px {
+              width: 100%;
+              padding-right: 0;
+            }
+            p {
+              font-size: 13px;
+              padding-bottom: 7px;
+            }
+            h3 {
+              font-size: 16px;
+            }
+          }
+        }
+        .single_wrap {
+          width: 100%;
+          padding-bottom: 25px;
+          p {
+            font-size: 13px;
+            padding-bottom: 7px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+        }
+        .mini-tag {
+          padding-bottom: 10px;
+          h2 {
+            font-size: 17px;
+            text-decoration: underline;
+          }
+        }
+        .info-table {
+          overflow-x: auto;
+          table {
+            width: 100%;
+            thead {
+              tr {
+                th {
+                  font-size: 16px;
+                  padding: 15px 10px;
+                  background-color: #fff;
+                  min-width: 100px;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  font-size: 14px;
+                  padding: 10px 10px;
+                  background-color: #fff;
+                  min-width: 100px;
+                  &.count {
+                    text-align: right;
+                  }
+                  a {
+                    text-decoration: none;
+                    button {
+                      font-size: 14px;
+                      border: none;
+                      padding: 10px 30px;
+                      background: #446ce4;
+                      border: 1px solid #446ce4;
+                      border-radius: 21px;
+                      color: #fff;
+                      display: flex;
+                    }
+                  }
+                }
+                &:nth-child(odd) {
+                  td {
+                    background-color: #f1f6ff;
+                  }
+                }
+              }
+            }
+          }
+          form {
+            .top_form {
+              padding: 20px 30px;
+              .cardx {
+                width: 32%;
+                margin-bottom: 23px;
+                @include mobile-800px {
+                  width: 48%;
+                }
+                @include mobile-420px {
+                  width: 100%;
+                }
+                p {
+                  font-size: 12px;
+                  padding-bottom: 9px;
+                }
+                input,
+                select {
+                  width: 100%;
+                  background: #f5f5f5;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                }
+              }
+              .remove {
+                width: 100%;
+                text-align: right;
+                p {
+                  color: red;
+                  font-size: 15px;
+                  cursor: pointer;
+                }
+              }
+              .top_six {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+              .address {
+                width: 100%;
+                margin-bottom: 23px;
+                p {
+                  font-size: 12px;
+                  padding-bottom: 9px;
+                }
+                input,
+                select {
+                  width: 100%;
+                  background: #f5f5f5;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                }
+              }
+              .top_four {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .cardxs {
+                  width: 48%;
+                  margin-bottom: 23px;
+                  @include mobile-420px {
+                    width: 100%;
+                  }
+                  p {
+                    font-size: 12px;
+                    padding-bottom: 9px;
+                  }
+                  input,
+                  select {
+                    width: 100%;
+                    background: #f5f5f5;
+                    border: 0.5px solid #a7a7a7;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+            .buttons {
+              display: flex;
+              justify-content: right;
+              padding: 10px;
+              button {
+                font-size: 14px;
+                border: none;
+                padding: 10px 30px;
+                background: #446ce4;
+                border: 1px solid #446ce4;
+                border-radius: 21px;
+                color: #fff;
+                display: flex;
+                p {
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.editd {
+        padding-top: 20px;
+        .info {
+          .info_wrap {
+            .top_form {
+              padding: 40px 30px;
+              .cardx {
+                width: 32%;
+                margin-bottom: 23px;
+                @include mobile-800px {
+                  width: 48%;
+                }
+                @include mobile-420px {
+                  width: 100%;
+                }
+                p {
+                  font-size: 12px;
+                  padding-bottom: 9px;
+                  text-transform: uppercase;
+                }
+                input,
+                select {
+                  width: 100%;
+                  background: #f5f5f5;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                }
+                button {
+                  width: 100%;
+                  background: red;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  color: #fff;
+                }
+              }
+              .remove {
+                width: 100%;
+                text-align: right;
+                p {
+                  color: red;
+                  font-size: 15px;
+                  cursor: pointer;
+                }
+              }
+              .top_six {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+              .address {
+                width: 100%;
+                margin-bottom: 23px;
+                p {
+                  font-size: 12px;
+                  padding-bottom: 9px;
+                }
+                input,
+                select {
+                  width: 100%;
+                  background: #f5f5f5;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                }
+              }
+              .top_four {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .cardxs {
+                  width: 48%;
+                  margin-bottom: 23px;
+                  @include mobile-420px {
+                    width: 100%;
+                  }
+                  p {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    padding-bottom: 9px;
+                  }
+                  input,
+                  select {
+                    width: 100%;
+                    background: #f5f5f5;
+                    border: 0.5px solid #a7a7a7;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                  }
+                }
+              }
+              .child_add {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                .cardxs {
+                  width: 45%;
+                  margin-bottom: 23px;
+                  @include mobile-420px {
+                    width: 100%;
+                  }
+                  p {
+                    font-size: 12px;
+                    padding-bottom: 9px;
+                  }
+                  input,
+                  select {
+                    width: 100%;
+                    background: #f5f5f5;
+                    border: 0.5px solid #a7a7a7;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                  }
+                }
+                .remove-butt {
+                  font-size: 11px;
+                  color: red;
+                  cursor: pointer;
+                }
+              }
+              .child_button {
+                display: flex;
+                justify-content: right;
+                .button {
+                  background: none;
+                  border: 1px solid #446ce4;
+                  color: #446ce4;
+                  font-size: 14px;
+                  width: fit-content;
+                  padding: 10px;
+                  cursor: pointer;
+                }
+              }
+              .top_diff {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .cardxs {
+                  width: 67%;
+                  margin-bottom: 23px;
+                  @include mobile-420px {
+                    width: 100%;
+                  }
+                  p {
+                    font-size: 12px;
+                    padding-bottom: 9px;
+                  }
+                  input,
+                  select {
+                    width: 100%;
+                    background: #f5f5f5;
+                    border: 0.5px solid #a7a7a7;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                  }
+                }
+                .cardxt {
+                  width: 30%;
+                  margin-bottom: 23px;
+                  @include mobile-420px {
+                    width: 100%;
+                  }
+                  p {
+                    font-size: 12px;
+                    padding-bottom: 9px;
+                  }
+                  input,
+                  select {
+                    width: 100%;
+                    background: #f5f5f5;
+                    border: 0.5px solid #a7a7a7;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                  }
+                }
+              }
+              .buttonx {
+                button {
+                  width: fit-content;
+                  background: #39bb46;
+                  border: 0.5px solid #a7a7a7;
+                  border-radius: 3px;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    width: 30%;
+    background-color: #fff;
+    height: 100vh;
+    padding: 100px 20px 0px 20px;
+    z-index: 1;
+    @include mobile-800px {
+      position: absolute;
+      width: 35%;
+      right: 100%;
+      &.active {
+        right: 0;
+      }
+    }
+    @include mobile-600px {
+      width: 60%;
+    }
+    @include mobile-420px {
+      width: 80%;
+    }
+    .close {
+      display: none;
+      @include mobile-800px {
+        display: block;
+      }
+      svg {
+        font-size: 30px;
+      }
+    }
+    .top {
+      display: flex;
+      justify-content: right;
+      button {
+        font-size: 14px;
+        border: none;
+        padding: 10px 30px;
+        background: #446ce4;
+        border: 1px solid #446ce4;
+        border-radius: 21px;
+        color: #fff;
+        display: flex;
+        p {
+          padding-right: 5px;
+        }
+      }
+    }
+    .tag {
+      padding-top: 35px;
+      padding-bottom: 30px;
+      h1 {
+        font-size: 25px;
+        @include mobile-420px {
+          font-size: 20px;
+        }
+      }
+    }
+    .links {
+      ul {
+        background: #e6ecf8;
+        border: 1px solid #dae3f6;
+        border-radius: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        li {
+          padding: 20px;
+          font-size: 16px;
+          border-bottom: 1px solid #dae3f6;
+          cursor: pointer;
+          &.active {
+            background: #446ce4;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .formload {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.548);
+    display: flex;
+    justify-content: center;
+    padding-top: 30%;
+    z-index: 2;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
